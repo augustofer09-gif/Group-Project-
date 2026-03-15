@@ -11,14 +11,21 @@ background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 min-height:100vh;
 display:flex;
 flex-direction: column;
-justify-content:space-evenly;
 align-items:center;
 color:white;
+gap:3em;
+margin-top:3em;
 }
 header {
     width: 50%;
     display:flex;
     justify-content: space-between;
+}
+.Hnav {
+    background-color: rgba(255,255,255,0.05);
+    padding:14px;
+    border:0.3px solid grey;
+    border-radius:40px;
 }
 .slider{
 width:420px;
@@ -96,4 +103,22 @@ transition:all 0.3s;
 .dot.active{
 background:white;
 transform:scale(1.2);
+}
+
+/*/---- Footer ----/*/
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    font-size:15px;
+    width:100%;
+}
+.end_credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:60px;font-size:20px;
 }
