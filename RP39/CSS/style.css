@@ -1,0 +1,49 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.Animatedbg {
+    position: absolute;
+    z-index:-9999;
+    min-height: 100vh;
+    width: 100%;
+    background: #9dff4d;
+    background: linear-gradient(125deg, 
+    rgba(177, 10, 101, 0.904) 10%,
+    rgba(158, 8, 146, 0.781) 25%, 
+    rgba(133, 63, 190, 0.781) 40%, 
+    rgba(177, 10, 101, 0.918) 75%, 
+    rgb(204, 21, 128) 88%);
+    background-size: 300% 300%;
+    animation: color 17s cubic-bezier(.77,0,.18,1) infinite;
+    display:flex;
+    justify-content: center;
+    padding:2em;
+}
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+ 
+#fondo {
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:150px;
+    gap:1em;
+}
+.cubo {
+    height:200px;
+    width:30vw;
+    background-color: grey;
+}
